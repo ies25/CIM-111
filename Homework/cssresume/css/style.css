@@ -65,7 +65,9 @@ font-style: italic;;
 }
 
 img{
-    border:3px solid Aqua;
+    border: solid;
+    border-color: Aqua;
+    border-width: 3px; 
 }
 #table{
   color: Teal;
