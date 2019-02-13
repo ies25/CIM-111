@@ -64,12 +64,12 @@ font-family: 'Raleway';
 font-style: italic;;
 }
 
-#img_3315{
-          border:3px solid Aqua;
-          }
+img{
+    border:3px solid Aqua;
+}
 #table{
   color: Teal;
-  
+
 }
 
 #mynameis{
