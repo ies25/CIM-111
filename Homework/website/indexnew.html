@@ -3,186 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Responsive Site</title>
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 750px)">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 750px">
+
+
     <style>
-      body{
-        background-color: blue;
-        width: 100%;
-        height: auto;
-      }
-      main{
-        background-color: purple;
-        width: 100%;
-        height: auto;
-      }
-      header{
-          width: 90%;
-          height: 100px;
-          background-color: coral;
-          margin: 0 auto;
-      }
-
-      nav{
-        width: 325px;
-        height: 40px;
-        background-color: black;
-        margin: 0 auto;
-      }
-
-      nav ul{
-        margin: 0 auto;
-      }
-      nav ul li{
-        list-style: none;
-        display: inline-block;
-        /* width: 100px; */
-        text-align: center;
-        margin-right: 20px;
-      }
-      nav ul li a{
-        text-decoration: none;
-        color: white;
-        font-size: 30px;
-        font-weight: bold;
-      }
-
-      nav ul li a:hover{
-        background-color: pink;
-      }
-
-      main {
-          width: 100%;
-          height: 900px;
-          background-color: aliceblue;
-          margin: 0 auto;
-      }
-      footer {
-          width: 80%;
-          height: 50px;
-          background-color: coral;
-          margin: 0 auto;
-      }
-
-      #sect1{
-        width: 90%;
-        height: 350px;
-        margin: 0 auto;
-        background-color: purple;
-        margin-bottom: 10px;
-      }
-      #facegrid1{
-        width: 600px;
-        margin: 0 auto;
-        background-color: green;
-          display: grid;
-
-          grid-template-rows: 100px;
-           grid-template-columns: 300px 300px;
-
-         /*
-          grid-template-row: 1fr;
-          grid-template-columns: 1fr 1fr;
-          */
-
-
-      }
-      #facegrid2{
-        width: 800px;
-        margin: 0 auto;
-        background-color: gold;
-
-          display: grid;
-          grid-template-rows: 100px 100px;
-          grid-template-columns: 200px 200px 200px 200px;
-
-          /*
-          grid-template-row: 1fr; 1fr;
-          grid-tempate-colums: 1fr 1fr 1fr 1fr;
-          */
-          margin-bottom: 20px;
-
-      }
-      #sect2{
-        width: 90%;
-        height: 350px;
-        margin: 0 auto;
-        background-color: mediumseagreen;
-        margin-bottom: 10px;
-      }
-      #eyesgrid1{
-        width: 600px;
-        margin: 0 auto;
-        background-color: green;
-          display: grid;
-
-          grid-template-rows: 100px;
-           grid-template-columns: 300px 300px;
-
-         /*
-          grid-template-row: 1fr;
-          grid-template-columns: 1fr 1fr;
-          */
-
-
-      }
-      #eyesgrid2{
-        width: 800px;
-        margin: 0 auto;
-        background-color: gold;
-
-          display: grid;
-          grid-template-rows: 100px 100px;
-          grid-template-columns: 200px 200px 200px 200px;
-
-          /*
-          grid-template-row: 1fr; 1fr;
-          grid-tempate-colums: 1fr 1fr 1fr 1fr;
-          */
-          margin-bottom: 20px;
-      }
-      #sect3{
-        width: 90%;
-        height: 350px;
-        margin: 0 auto;
-        background-color: Cyan;
-        margin-bottom: 10px;
-      }
-      #lipsgrid1{
-        width: 600px;
-        margin: 0 auto;
-        background-color: green;
-          display: grid;
-
-          grid-template-rows: 100px;
-           grid-template-columns: 300px 300px;
-
-         /*
-          grid-template-row: 1fr;
-          grid-template-columns: 1fr 1fr;
-          */
-      }
-      #lipsgrid2{
-        width: 800px;
-        margin: 0 auto;
-        background-color: gold;
-
-          display: grid;
-          grid-template-rows: 100px 100px;
-          grid-template-columns: 200px 200px 200px 200px;
-
-          /*
-          grid-template-row: 1fr; 1fr;
-          grid-tempate-colums: 1fr 1fr 1fr 1fr;
-          */
-          margin-bottom: 20px;
-      }
-
-
-
+    @media only screen and (max-width: 600px){
+    }
     </style>
   </head>
   <body>
     <header>
-      <h1>Makeup Blog</h1>
+      <h1 id="maintitle">Makeup Blog</h1>
       <nav>
         <ul>
           <li>
@@ -200,73 +32,153 @@
 
   <main>
     <section id="sect1">
-      <h1 class="mainTitle">Face</h1>
+      <h1 class="sectiontitle">&nbsp;Face</h1>
         <div id="facegrid1">
-          <section>Image</section>
           <section>
-              <img>
-              <p></p>
+            <img class="imageGallery" src="images/face.jpg" width="300">
+            <p class="imagelink">Photo by Irene Sullivan</p>
+          </section>
+          <section>
+              <img class="imageGallery" src="images/face2.jpg" width="300">
+              <p class="imagelink">"Beauty" by Mihaela Cherciu is licensed under CC BY-NC-ND 4.0. To view a copy of this license, visit: https://creativecommons.org/licenses/by-nc-nd/4.0</p>
           </section>
         </div>
         <div id="facegrid2">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
+          <div>
+            <h4>TATCHA The Silk Canvas Protective Primer</h4>
+            <p>Review: Fills in pores, Blurs oily areas, Smooths out texture.</p>
+          </div>
+          <div>
+            <h4>LAURA MERCIER Flawless Fusion Ultra-Longwear Foundation</h4>
+            <p>Review: Matte finish, very longwearing, non-drying</p>
+          </div>
+          <div>
+            <h4>TARTE Double Beauty Shape Tape Contour Concealer</h4>
+            <p>Review: Hands down the best concealer on the market</p>
+          </div>
+          <div>
+            <h4>LAURA MERCIER Translucent Loose Setting Powder</h4>
+            <p>Review: Another cult favorite that never fails</p>
+            </div>
+          <div>
+            <h4>BENEFIT COSMETICS Hoola Matte Bronzer</h4>
+            <p>Review: Great for both contouring and bronzing</p>
+          </div>
+          <div>
+            <h4>MILANI Baked Blush in Luminoso</h4>
+            <p>Review: Beautiful sheen, subtle color</p>
+          </div>
+          <div>
+            <h4>BENEFIT COSMETICS High Beam Satiny-Pink Liquid Highlighter</h4>
+            <p>Review: Non-cakey look, very glowy, natural highlight</p>
+          </div>
+          <div>
+            <h4>MAC Prep & Prime Fix+</h4>
+            <p>Review: Very versatile, primer, setting spray, eyeshadow enhancer</p>
+          </div>
         </div>
       </section>
 
       <section id="sect2">
-        <h1 class="mainTitle">eyes</h1>
+        <h1 class="sectiontitle">&nbsp;Eyes</h1>
           <div id="eyesgrid1">
-            <section>Image</section>
             <section>
-                <img>
-                <p></p>
+              <img class="imageGallery" src="images/eyes.jpg" width="300">
+                <p class="imagelink">Photo by Irene Sullivan</p>
+            </section>
+            <section>
+                <img class="imageGallery" src="images/eyes2.jpg" width="300">
+                <p class="imagelink">"PINK. Retouch for ph. Dominic Nicholls" by Alena Vasilevich, Dominic Nicholls is licensed under CC BY-NC-ND 4.0. To view a copy of this license, visit: https://creativecommons.org/licenses/by-nc-nd/4.0</p>
             </section>
           </div>
           <div id="eyesgrid2">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
+            <div>
+              <h4>ANASTASIA BEVERLY HILLS Sultry Eyeshadow Palette</h4>
+              <p>Review: Both cool and warm toned shadows, blends well</p>
+            </div>
+            <div>
+              <h4>TOO FACED The Chocolate Bar Eyeshadow Palette</h4>
+              <p>Review: The Go-To neutrals palette, no fall-out</p>
+            </div>
+            <div>
+              <h4>FENTY BEAUTY Moroccan Eyeshadow Palette</h4>
+              <p>Review: Neutral and colorful, matte shades are the best</p>
+            </div>
+            <div>
+              <h4>URBAN DECAY Eyeshadow Primer Potion</h4>
+              <p>Review: Helps eyeshadow apply better, wear longer, and blend easier</p>
+            </div>
+            <div>
+              <h4>CIATE LONDON Fierce Flicks Precision Tip Liquid Liner</h4>
+              <p>Review: Dries down quick, matte black, not watery</p>
+            </div>
+            <div>
+              <h4>ANASTASIA BEVERLY HILLS Brow Wiz</h4>
+              <p>Review: Very Preise, not too waxy, long lasting</p>
+            </div>
+            <div>
+              <h4>MAC Pro Longwear Waterproof Brow Set</h4>
+              <p>Review: Non-clumpy, sets brows, creates feathery look</p>
+            </div>
+            <div>
+              <h4>L'OREAL PARIS Voluminous Lash Paradise</h4>
+              <p>Review: Volumizing, Lengthening, non-smudging</p>
+            </div>
           </div>
       </section>
 
       <section id="sect3">
-        <h1 class="mainTitle">Lips</h1>
+        <h1 class="sectiontitle">&nbsp;Lips</h1>
           <div id="lipsgrid1">
-            <section>Image</section>
-            <section>
-                <img>
-                <p></p>
+            <section >
+              <img class="imageGallery" src="images/lips.jpg" width="300">
+              <p class="imagelink">Photo by Irene Sullivan</p>
+            </section>
+            <section >
+                <img class="imageGallery" src="images/lips2.jpg" width="300">
+                <p class="imagelink">"materia" by Verena Mandragora is licensed under CC BY-NC-ND 4.0. To view a copy of this license, visit: https://creativecommons.org/licenses/by-nc-nd/4.0</p>
             </section>
           </div>
           <div id="lipsgrid2">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
+            <div>
+              <h4>BUXOM Full-On Lip Cream</h4>
+              <p>Review: Non-sticky, long lasting, comfortable wear</p>
+            </div>
+            <div>
+              <h4>BELLE EN ARGENT Lip Luire Lip Gloss</h4>
+              <p>Review: Holographic look, wears well over other products</p>
+            </div>
+            <div>
+              <h4>CONTOUR COSMETICS Lip Liner</h4>
+              <p>Reviw: Pigmented, glides on easy, non-smudge</p>
+            </div>
+            <div>
+              <h4>LUSH Lip Scrub</h4>
+              <p>Review: Great lip exfoliator, edible, instant results</p>
+            </div>
+            <div>
+              <h4>STILA Stay All Day Liquid Lipstick</h4>
+              <p>Review: Very long wearing, slightly drying, wear over lip balm</p>
+            </div>
+            <div>
+              <h4>NYX Whipped Lip</h4>
+              <p>Reviw: Light formula, pleasant scent, slightly sticky</p>
+            </div>
+            <div>
+              <h4>NYX Liquid Suede Lip Cream</h4>
+              <p>Review: Matte finish, very smooth, minimal transfer</p>
+            </div>
+            <div>
+              <h4>NYX Butter Gloss</h4>
+              <p>Review: Best affordable and convenient everyday gloss</p>
+            </div>
           </div>
       </section>
 
   </main>
 
   <footer>
-    <p>Footer</p>
-
+    <p>This information is &nbsp; &copy;</p>
   </footer>
   </body>
   </html>
