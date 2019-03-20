@@ -9,6 +9,7 @@ body{
   background-color: DarkTurquoise;
   font-family: 'Playfair Display', serif;
 }
+
 h2{
   background-color: MediumTurquoise;
   color: White;
@@ -61,7 +62,7 @@ li{
 }
 h4{
 font-family: 'Raleway';
-font-style: italic;;
+font-style: italic;
 }
 
 img{
@@ -71,13 +72,12 @@ img{
 }
 #table{
   color: Teal;
-
 }
 
 #mynameis{
   color: teal;
 }
 #Contactme{
-  font-family: 'Raleway', sans-serif;
+   font-family: 'Raleway', sans-serif;
   font-size: 16px
 }
