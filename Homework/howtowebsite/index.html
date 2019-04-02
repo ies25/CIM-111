@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <h1>How to Make Rainbow Cupcakes!</h1>
+      <p><img src="images/finished.jpg" width="300"></p>
+    </header>
+    <section>
+      <h2 id="ingredients">Ingredients +</h2>
+      <ul id="ingredientslist">
+        <div>
+          <img src="images/ingredients.jpg" width="300">
+        </div>
+        <li>1 stick of softened butter</li>
+        <li>1 1/6 cups of sugar</li>
+        <li>3 egg whites</li>
+        <li>1/2 tablespoon vanilla</li>
+        <li>1 1/2 cups of flour</li>
+        <li>2 teaspoons baking powder</li>
+        <li>1/4 teaspoon salt</li>
+        <li>3/4 cups milk</li>
+        <li>Pillsbury vanilla frosting (any color)</li>
+
+      </ul>
+    </section>
+
+    <section>
+      <h2>Instructions</h2>
+    </section>
+    <section>
+      <div id="step1"><h3>Step 1</h3></div>
+      <div id="s1">
+        Preheat oven to 350 degrees.
+      </div>
+      <div id="step2"><h3>Step 2</h3></div>
+      <div id="s2">
+        <div>Mix together egg whites, vanilla, flour, baking powder, salt, milk, butter and sugar.</div>
+      </div>
+      <div id="step3"><h3>Step 3</h3></div>
+      <div id="s3">
+        <div>Divide batter evenly into 6 different bowls.</div>
+        <div> <img src="images/batter.jpg" width="300"> </div>
+      </div>
+      <div id="step4"><h3>Step 4</h3></div>
+      <div id="s4">
+        <div>Mix the food coloring in each bowl of batter. You should have one red, orange, yellow, green, blue, and purple bowl.</div>
+        <div><img src="images/foodcoloring.jpg" width="300"></div>
+      </div>
+      <div id="step5"><h3>Step 5</h3></div>
+      <div id="s5">
+        <div>Put one spoonful of each color into each cup of a nonstick muffin tray. Go in descending order of the rainbow.</div>
+        <div><img src="images/uncooked.jpg" width="300"></div>
+      </div>
+      <div id="step6"><h3>Step 6</h3></div>
+      <div id="s6">
+        <div>Bake for 18-20 minutes. Let cool for 20 minutes before frosting</div>
+        <div><img src="images/cooked.jpg" width="300"></div>
+      </div>
+      <div id="step7"><h3>Step 7</h3></div>
+      <div id="s7">
+        <div>Frost the cupcakes as desired.</div>
+        <div><img src="images/topiced.jpg" width="300"></div>
+      </div>
+    </section>
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("body").css("background-color", "#FEEBF2");
+        $("#ingredientslist").hide();
+        $("#s1").hide();
+        $("#s2").hide();
+        $("#s3").hide();
+        $("#s4").hide();
+        $("#s5").hide();
+        $("#s6").hide();
+        $("#s7").hide();
+// ingredients
+        $("#ingredients").click(function(){
+          $("#ingredientslist").show();
+        });
+        $("#ingredientslist").click(function(){
+          $("#ingredientslist").hide();
+        });
+        $("#ingredientslist").mouseenter(function(){
+          $("#ingredients").html("Ingredients -");
+        });
+
+        $("#ingredientslist").mouseleave(function(){
+          $("#ingredients").html("Ingredients +");
+        });
+// step 1
+        $("#step1").click(function(){
+          $("#s1").toggle();
+        });
+        $("#step1").mouseenter(function(){
+          $("#step1").css("color", "#FECOCF");
+          $("#step1").css("background-color", "white");
+        });
+        $("#mouseOverOut").mouseleave(function(){
+          $("#mouseOverOut").css("color", "black");
+          $("#mouseOverOut").css("background-color", "");
+        });
+
+// step 2
+        $("#step2").click(function(){
+          $("#s2").toggle();
+        });
+// step 3
+        $("#step3").click(function(){
+          $("#s3").toggle();
+        });
+// step 4
+        $("#step4").click(function(){
+          $("#s4").toggle();
+        });
+//step 5
+        $("#step5").click(function(){
+          $("#s5").toggle();
+        });
+// step 6
+        $("#step6").click(function(){
+          $("#s6").toggle();
+        });
+// step 7
+        $("#step7").click(function(){
+          $("#s7").toggle();
+        });
+
+
+
+
+
+      });
+    </script>
+  </body>
+</html
