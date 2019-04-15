@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+      <!-- jQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+      <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+      <!-- nanogallery2 -->
+      <link  href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+      <script  type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
+      <style>
+        header{
+          margin: 0 auto;
+          width: 80%;
+          height: auto;
+          text-align: center;
+        /*  background-color: #52AFA4; */
+        /*  margin-bottom: -35px; */
+        }
+        h1{
+          font-family: 'Permanent Marker', cursive;
+          font-size: 50px;
+          color: #F3C43E;
+          background-color: #9F0102;
+          width: 500px;
+          margin: 0 auto;
+
+        }
+
+        body{
+          background-color: #068B76;
+        }
+        .city{
+          margin: 0 auto;
+          width: 80%;
+          background-color: #D7AA2E;
+          height: auto;
+        }
+        h2{
+          font-family: 'Permanent Marker', cursive;
+          margin-left: 10px;
+          font-size: 35px;
+          color: #9F0102;
+        }
+        h3{
+          font-family: 'Permanent Marker', cursive;
+          text-align: center;
+          font-size: 30px;
+          color: #068B76;
+          background-color: #9F0102;
+        }
+        #intro{
+          width: 80%;
+          height: auto;
+          margin: 0 auto;
+          background-color: #D7AA2E;
+        }
+        h4{
+          font-family: 'Merienda', cursive;
+          font-size: 20px;
+          color: #9F0102;
+          padding-left: 10px;
+          padding-right: 10px;
+
+        }
+        ul{
+          width: 100%;
+          height: 100px;
+          margin: 0 auto;
+          margin-left: -9px;
+          text-align: center;
+        }
+
+
+
+          ul li{
+          font-family: 'Merienda', cursive;
+          list-style: none;
+          display: inline-block;
+          text-align: center;
+          text-decoration: none;
+          color: #068B76;
+          background-color: #9F0102;
+          font-size: 30px;
+          line-height: 30px;
+          margin-bottom: 10px;
+        }
+
+
+
+
+
+      </style>
+
+  </head>
+  <body>
+    <header>
+      <h1>My Trip to China</h1>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h4>I visited China my senior year of highschool with a large group of my classmates. We first landed in Beijing, where we visited the popular night market, the Forbidden City, and the Great Wall. Next, we flew to the Gansu Province and saw the rainbow mountains, visisted a monestary, and rode cammels in the Gobi Desert. Finally, we ended our trip in Shanghai by taking a river boat tour and going to the City God Temple Garden.  </h4>
+        <ul>
+          <li>Night Market</li>
+          <li>Forbidden City</li>
+          <li>Great Wall</li>
+          <li>Rainbow Mountains</li>
+          <li>Monestary</li>
+          <li>Gobi Desert</li>
+          <li>Shanghai</li>
+        </ul>
+      </section>
+      <section class="city">
+        <h2>Beijing</h2>
+      <!-- ### position of the gallery ### -->
+        <div id="beijing">gallery_made_with_nanogallery2</div>
+  <!--      <div id="nanogallery2">gallery_made_with_nanogallery2</div> -->
+      </section>
+      <section class="city">
+        <h2>Gansu Province</h2>
+        <h3>Rainbow Mountains</h3>
+        <div id="rainbowmountains"></div>
+        <h3>Monastery</h3>
+        <div id="monastery"></div>
+        <h3>Gobi Desert</h3>
+        <div id="gobi"></div>
+      </section>
+      <section class="city">
+        <h2>Shanghai</h2>
+        <div id="shanghai"></div>
+      </section>
+    </main>
+        <script>
+           jQuery(document).ready(function () {
+
+
+              jQuery("#beijing").nanogallery2( {
+                items:[
+                  // album 1
+                  {
+                      src:   'nightmarket.jpg',		     // image url
+                      srct:  'nightmarket.jpg',	     // thumbnail url
+                      title: 'Night Market',   // item title
+                      ID: 1,                       // item ID
+                      kind: 'album'                // item kind
+                  },
+                  { src: 'nightmarket.jpg', srct: 'nightmarket.jpg', title: 'Fried Bugs', ID: 10, albumID: 1},
+                  { src: 'scorpion.jpg', srct: 'scorpion.jpg', title: 'Eating a scorpion', ID: 11, albumID: 1},
+                  { src: 'nitrogenpop.jpg', srct: 'nitrogenpop.jpg', title: 'Sarah and I', ID: 12, albumID: 1},
+                  //album 2
+                  {
+                      src:   'mao.jpg',		     // image url
+                      srct:  'mao.jpg',	     // thumbnail url
+                      title: 'The Forbidden City',   // item title
+                      ID: 2,                       // item ID
+                      kind: 'album'                // item kind
+                  },
+                  { src: 'mao.jpg', srct: 'mao.jpg', title: 'Forbidden City', ID: 20, albumID: 2},
+                  { src: 'emma.jpg', srct: 'emma.jpg', title: 'Emma and I', ID: 21, albumID: 2},
+                  { src: 'fcoutlook.jpg', srct: 'fcoutlook.jpg', title: 'Courtyard View', ID: 22, albumID: 2},
+                  //album 3
+                  {
+                      src:   'gwcover.jpg',		     // image url
+                      srct:  'gwcover.jpg',	     // thumbnail url
+                      title: 'The Great Wall',   // item title
+                      ID: 3,                       // item ID
+                      kind: 'album'                // item kind
+                  },
+                  { src: 'gwcover.jpg', srct: 'gwcover.jpg', title: 'Great Wall of China', ID: 30, albumID: 3},
+                  { src: 'start.jpg', srct: 'start.jpg', title: 'The Start', ID: 31, albumID: 3},
+                  { src: 'smile.jpg', srct: 'smile.jpg', title: 'Legs Hurting, Still Smiling', ID: 32, albumID: 3},
+
+
+                ],
+                thumbnailAlignment: 'center',
+                thumbnailWidth:  310,
+                thumbnailHeight: 250,
+                itemsBaseURL:    'images/',
+
+            //    locationHash:    false,
+              });
+              jQuery("#rainbowmountains").nanogallery2( {
+                  // ### gallery settings ###
+                thumbnailHeight:  200,
+                thumbnailWidth:   "auto",
+                itemsBaseURL:     'images/',
+
+                  // ### gallery content ###
+                items: [
+                  { src: 'braids.jpg', srct: 'braids.jpg', title: '', },
+                  { src: 'mountains1.jpg', srct: 'mountains1.jpg', title: '' },
+                  { src: 'panorama.jpg', srct: 'panorama.jpg', title: '' },
+                  { src: 'mountains2.jpg', srct: 'mountains2.jpg', title: '' },
+                  { src: 'rain.jpg', srct: 'rain.jpg', title: '' },
+                  { src: 'mountains3.jpg', srct: 'mountains3.jpg', title: '' },
+                  {src: 'selfie.jpg', srct: 'selfie.jpg', title: '' },
+
+                ]
+                });
+                jQuery("#monastery").nanogallery2( {
+                    // ### gallery settings ###
+                  thumbnailHeight:  200,
+                  thumbnailWidth:   250,
+                  itemsBaseURL:     'images/',
+
+                    // ### gallery content ###
+                  items: [
+                    { src: 'butter1.jpg', srct: 'butter1.jpg', title: '', },
+                    { src: 'pillar.jpg', srct: 'pillar.jpg', title: '' },
+                    { src: 'butter2.jpg', srct: 'butter2.jpg', title: '' },
+                    { src: 'stone.jpg', srct: 'stone.jpg', title: '' },
+                    { src: 'butter3.jpg', srct: 'butter3.jpg', title: '' },
+                    { src: 'monks.jpg', srct: 'monks.jpg', title: '' },
+                    {src: 'butter4.jpg', srct: 'butter4.jpg', title: '' },
+                    {src: 'jump.jpg', srct: 'jump.jpg', title: '' },
+
+                  ]
+                  });
+
+                jQuery("#gobi").nanogallery2( {
+                    // ### gallery settings ###
+                  thumbnailHeight:  200,
+                  thumbnailWidth:   "auto",
+                  itemsBaseURL:     'images/',
+
+                    // ### gallery content ###
+                  items: [
+                    { src: 'walking.jpg', srct: 'walking.jpg', title: '', },
+                    { src: 'cartwheel.jpg', srct: 'cartwheel.jpg', title: '' },
+                    { src: 'mycamel.jpg', srct: 'mycamel.jpg', title: '' },
+                    { src: 'oncamels.jpg', srct: 'oncamels.jpg', title: '' },
+                    { src: 'sarahv.jpg', srct: 'sarahv.jpg', title: '' },
+                    { src: 'lookback.jpg', srct: 'lookback.jpg', title: '' },
+                    {src: 'fawaway.jpg', srct: 'fawaway.jpg', title: '' },
+                    {src: 'vacation.jpg', srct: 'vacation.jpg', title: '' },
+                    {src: 'ontop.jpg', srct: 'ontop.jpg', title: '' },
+                    {src: 'sittinginsand.jpg', srct: 'sittinginsand.jpg', title: '' },
+
+                  ]
+                  });
+
+              jQuery("#shanghai").nanogallery2( {
+                thumbnailHeight: 1500,
+                thumbnailWidth: 2000,
+                itemsBaseURL:     'images/',
+                galleryMosaic :   [
+                  { c: 1, r: 1, w: 2, h: 2 },
+                  { c: 3, r: 1, w: 1, h: 1 },
+                  { c: 3, r: 2, w: 1, h: 1 },
+                  { c: 4, r: 1, w: 1, h: 2 },
+                  { c: 1, r: 3, w: 1, h: 1 },
+                  { c: 2, r: 3, w: 2, h: 1 },
+                  { c: 4, r: 3, w: 1, h: 1 }
+                ],
+                items: [
+                  { src: 'nightcity.jpg', srct: 'nightcity.jpg', title: '', },
+                  { src: 'boatride.jpg', srct: 'boatride.jpg', title: '' },
+                  { src: 'rooftop.jpg', srct: 'rooftop.jpg', title: '' },
+                  { src: 'meingarden.jpg', srct: 'meingarden.jpg', title: '' },
+                  { src: 'squad.jpg', srct: 'squad.jpg', title: '' },
+                  { src: 'drazen.jpg', srct: 'drazen.jpg', title: '' },
+                  {src: 'trees.jpg', srct: 'trees.jpg', title: '' },
+                ]
+              });
+
+
+            });
+        </script>
+
+    </body>
+</html>
