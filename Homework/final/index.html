@@ -2,9 +2,442 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+    <!-- nanogallery2 -->
+    <link  href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script  type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
+    <title>Traveling To Chine: Crash Course</title>
+    <style>
+      header{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+      }
+      nav{
+        width: 100%;
+        height: auto;
+      /*  background-color: #E1F7E7;*/
+        margin: 0 auto;
+
+      }
+
+      nav ul{
+        margin: 0 auto;
+        margin-left: 13%;
+      }
+      nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+        text-align: center;
+        /*margin-right: 20px;*/
+      }
+      nav ul li a{
+      /*  font-family: 'Lobster', cursive; */
+        text-decoration: none;
+      /*  color: #789CCE; */
+        font-size: 20px;
+
+      }
+      nav ul li a:hover{
+    /*    background-color: #FFD6DA; */
+      }
+      #title{
+        text-align: center;
+        font-size: 40px;
+      }
+      #intro{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+      }
+      #nihao{
+        text-align: center;
+      }
+
+      #sect1{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+      }
+      #sect2{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+      }
+      #beijing{
+        margin: 0 auto;
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+      }
+      #shanghai{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 2fr 2fr 2fr;
+      }
+      #sect3{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+      }
+      #sect4{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+      }
+      #packing{
+        margin: 0 auto;
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      #suggestion{
+        margin-top: -5px;
+      }
+      #sect5{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
-    <p>我的生日</p>
+    <header>
+      <h1 id="title">Traveling to China: Crash Course</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#sect1">Cities</a>
+          </li>
+          <li>
+            <a href="#sect2">Exploring</a>
+          </li>
+          <li>
+            <a href="#sect3">What To Pack</a>
+          </li>
+          <li>
+            <a href="#sect4">Travel Tips</a>
+          </li>
+          <li>
+            <a href="#sect5">The Language</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h1 id="nihao">你好!</h1>
+        <h3>Have you always wanted to travel to China, but didn't know where to start?</h3>
+        <p>My trip to China was one of the most significant experiences I've had so far in life. My trip included four different cities jampacked into ten days.</p>
+      </section>
+      <section id="sect1">
+          <h1>Cities</h1>
+        <section class="cities">
+          <h2>Beijing (北京)</h2>
+            <p>As the capital of the People's Republic of China and one of the six ancient citys, Beijing is a must when visiting China. The majority of direct flights from the U.S. will fly into Beijing and therefor, is a convenient first stop on your trip. Here you can visit the Great Wall of China, one of the seven wonders of the modern world, and the Forbidden City, which was once the imperial palace for both the Ming and Qing Dynasties. In the evening, don't forget to check out the night market and try foods like fried scorpion!</p>
+        <div id="beijing">
+          <section> <img src="beijing/mao.jpg" width="250"> </section>
+          <section> <img src="beijing/fc.jpg" width="250"> </section>
+          <section> <img src="beijing/tsquare.jpg" width="250"> </section>
+          <section> <img src="beijing/keychain.jpg" width="250"> </section>
+          <section> <img src="beijing/wall.jpg" width="250"> </section>
+          <section> <img src="beijing/fcoutlook.jpg" width="250"> </section>
+          <section> <img src="beijing/nightmarket.jpg" width="250"> </section>
+          <section> <img src="beijing/views.jpg" width="250"> </section>
+        </div>
+        </section>
+        <section class="cities">
+          <h2>Shanghai (上海)</h2>
+            <p>Shanghai feels most like America out of all the places I visited in China. My personal suggestion would be to visit and depart from Shanghai last becuase it will ease the transition back. Unlike Beijing, Shanghai is very clean and and very modern. It is China's most populated city and sense of thriving development. A night cruise on the Huangpu River is the best way to see the breath-taking sky scrapers. During the day, visit the Yu Garden and enjoy the pure tranquility of a classical Chinese garden.</p>
+        <div id="shanghai">
+          <section> <img src="shanghai/a.jpg" width="333"> </section>
+          <section> <img src="shanghai/b.jpg" width="333"> </section>
+          <section> <img src="shanghai/c.jpg" width="333"> </section>
+          <section> <img src="shanghai/d.jpg" width="333"> </section>
+          <section> <img src="shanghai/e.jpg" width="333"> </section>
+          <section> <img src="shanghai/f.jpg" width="333"> </section>
+        </div>
+        </section>
+      </section>
+
+
+      <section id="sect2">
+        <h1>Exploring</h1>
+        <h4>Going Outside the Major Cities: The Gansu Province</h4>
+        <p>Chinese cities are extrordinary, but they should not be your only travel destinations in China. To fully immerse yourself in and experience the cultural differences in China, I strongly recommend visiting the Gansu Province. Located in Northwest China, Gansu has a unique cradle of Chinese culture. Over history and primarily attributed to the Silk Road, Han Chinese, Mongols, Turks and Tibetans all reside and co-exist the Gansu Province. The landmarks below are just a few of the treasures located in this part of China.
+        <section>
+          <h2>Labrang Monastery</h2>
+          <p>The Labrang Monastery is one of the largest Tibetan Monasteries in China. Experience buddhist structures, yak butter sculptures, and the longest line of prayer wheels in the world.</p>
+          <p>Fun Fact: The famous Chinese movie "World Without Thieves (2004)" was filmed here. </p>
+          <div id="monastery"></div>
+        </section>
+        <section>
+          <h2>The Rainbow Mountains of China</h2>
+          <p>One of National Geographic's 'Top 10 Geographical Wonders of the World', The Rainbow Mountains of China were formed after billions of years of climate on the land to create these one of a kind mountains. It's like standing in a sea of fire, but you'd have to see it for yourself.</p>
+          <div id="rainbowmountains"></div>
+        </section>
+        <section>
+          <h2>Mogao Caves</h2>
+          <p>Built in the year 366, and that is not a typo, the Mogao Caves were started by a monk who saw the vision of 1,000 Budhas. The construction lasted 10 dynasties and these caves are still standing to this day. In one of the caves is the second largest Budha sculpture ever!</p>
+          <div id="moagaocaves"></div>
+        </section>
+        <section>
+          <h2>Mingsha Mountain and Crescent Lake</h2>
+          <p>Insterested in riding cammels and going sledding down sand dunes? Visit Mingsha Mountain, also called the Echoing Sand Mountain. Don't forget suncreen! The sun is unforgivable.</p>
+          <div id="mingsha"></div>
+        </section>
+      </section>
+
+
+      <section id="sect3">
+        <h1>What to Pack</h1>
+        <div id="packing">
+          <section><video src="video/packing.m4v" height="400"></section>
+          <section>
+            <img src="packing/clothing.jpg" height="400">
+          </section>
+          <section>
+            <img src="packing/essentials.jpg" height="380">
+            <p id="suggestion">** Refer to Travel Tips</p>
+          </section>
+        </div>
+      </section>
+
+
+      <section id="sect4">
+        <h1>Travel Tips</h1>
+        <div>
+          <h3>Packing Tips</h3>
+          <p>**Please note: While shorts may be comfortable and preferable in some places due to warm temperatures, only wear shorts that are mid-thigh length or longer.  It is culturally respectful.  Except in major cities where western influence is more apparent, shorts are rarely worn in China. “Short shorts” and spaghetti straps are inappropriate.</p>
+          <p>Ziploc Bags: These are perfect for storing small items and items that could leak.</p>
+          <p>Baggage: Review the Airline Baggage Rules and TSA Guidelines. Most checked luggage cannot be over 50lbs.</p>
+          <p>Laundry: Most hotels have laundry service. Laundry dropped off in the morning is finished by the evening.  If you plan on doing this, make sure to budget extra spending money for the service. In addition, you could pack Woolite or a small container of detergent and do your own laundry.</p>
+        </div>
+        <div>
+          <h3>Do I need a Visa?</h3>
+          <p>Yes. You need a travel Visa. Apply at least 3 months in advance.</p>
+        </div>
+        <div>
+          <h3>Electronics and Converters</h3>
+          <p>Chinese hotels have hairdryers. No converters are necessary due to the fact that modern electronics auto-matically make the conversion. No adapters are needed</p>
+        </div>
+        <div>
+          <h3>Will My Cell Phone Work in China?</h3>
+          <p>Yes. Call your cell service provider to let them know that you will be traveling in China and find out about the best in-ternational plan for your needs. Be careful about using cell data in China. Use the internet when you have wifi access.</p>
+        </div>
+        <div>
+          <h3>Do I Need Vaccinations to go to China?</h3>
+          <p>Vaccinations are NOT REQUIRED for China. The Hepatitis A (food-borne illness) vaccination is recommended. Please speak with your doctor for a list of other recommended vaccinations, many of which you may already have had.</p>
+        </div>
+        <div>
+          <h3>Probiotics</h3>
+          <p>Consider taking a probiotic, active yeasts and live bacteria that are good for your digestive system, for a week or two before departure and for the duration of the trip.</p>
+        </div>
+        <div>
+          <h3>Can I Drink the Water in China?</h3>
+          <p>No. Even the locals do not drink the water. Most hotels have two complimentary bottles of water per day. It is fine to use the water to brush your teeth, wash up and shower. If you are concerned, however, you could boil the water in the room for tooth brushing. There is a kettle provided in every hotel room.</p>
+        </div>
+        <div>
+          <h3>Culture Shock</h3>
+          <ul>
+            <li>Some beds are HARD. We’re not talking “firm”, we’re talking “plywood-like”.</li>
+            <li>Locals will stare at you, take pictures of you and ask you to take pictures with them. Enjoy your 5 minutes of fame in China!</li>
+            <li>Squat toilets. Enough said. Bring some pocket packets of tissues</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section id="sect5">
+        <h1>The Language</h1>
+        <h5>In both Shanghai and Beijing, Mandarin is the most common language. Below are very useful words and phrases to use while comminicating with the Chinese.</h5>
+        <h3>Greetings</h3>
+        <h4 id="g1">Hello</h4>
+        <div id="toggleg1">
+          <h4>你好</h4>
+        </div>
+        <h4 id="g2">My Name Is</h4>
+        <div id="toggleg2">
+          <h4>我的叫“name”</h4>
+        </div>
+        <h4 id="g3">Thank You</h4>
+        <div id="toggleg3">
+          <h4>谢谢</h4>
+        </div>
+        <h4 id="g4">You're Welcome</h4>
+        <div id="toggleg4">
+          <h4>不客气</h4>
+        </div>
+
+        <h4 id="g5">Goodbye</h4>
+        <div id="toggleg5">
+          <h4>再见</h4>
+        </div>
+        <h3>Shopping</h3>
+
+        <h4 id="s1">How Much?</h4>
+        <div id="toggles1">
+          <h4>多少?</h4>
+        </div>
+
+        <h4 id="s2">Too Expensive</h4>
+        <div id="toggles2">
+          <h4>太贵了</h4>
+        </div>
+
+        <h4 id="s3">Make it a little cheaper</h4>
+        <div id="toggles3">
+          <h4>便宜一点</h4>
+        </div>
+        <h3>General and Helpful</h3>
+
+        <h4 id="h1">Where is the bathroom</h4>
+        <div id="toggleh1">
+          <h4>洗手间在哪里</h4>
+        </div>
+
+        <h4 id="h2">I Don't Understand</h4>
+        <div id="toggleh2">
+          <h4>我不懂</h4>
+        </div>
+
+      </section>
+    </main>
+    <script type="text/javascript">
+       jQuery(document).ready(function () {
+         $("#toggleg1").hide();
+         $("#toggleg2").hide();
+         $("#toggleg3").hide();
+         $("#toggleg4").hide();
+         $("#toggleg5").hide();
+         $("#toggles1").hide();
+         $("#toggles2").hide();
+         $("#toggles3").hide();
+         $("#toggleh1").hide();
+         $("#toggleh2").hide();
+
+         $("#g1").click(function(){
+           $("#toggleg1").toggle();
+         });
+         $("#g2").click(function(){
+           $("#toggleg2").toggle();
+         });
+         $("#g3").click(function(){
+           $("#toggleg3").toggle();
+         });
+         $("#g4").click(function(){
+           $("#toggleg4").toggle();
+         });
+         $("#g5").click(function(){
+           $("#toggleg5").toggle();
+         });
+
+         $("#s1").click(function(){
+           $("#toggles1").toggle();
+         });$("#s2").click(function(){
+           $("#toggles2").toggle();
+         });$("#s3").click(function(){
+           $("#toggles3").toggle();
+         });
+
+         $("#h1").click(function(){
+           $("#toggleh1").toggle();
+         });$("#h2").click(function(){
+           $("#toggleh2").toggle();
+         });
+
+
+
+          jQuery("#monastery").nanogallery2( {
+              // ### gallery settings ###
+            thumbnailHeight:  200,
+            thumbnailWidth:   250,
+            itemsBaseURL:     'monastery/',
+
+              // ### gallery content ###
+            items: [
+              { src: 'a.jpg', srct: 'a.jpg', title: '' },
+              { src: 'b.jpg', srct: 'b.jpg', title: '' },
+              { src: 'c.jpg', srct: 'c.jpg', title: '' },
+              { src: 'd.jpg', srct: 'd.jpg', title: '' },
+              { src: 'e.jpg', srct: 'e.jpg', title: '' },
+              { src: 'f.jpg', srct: 'f.jpg', title: '' },
+              { src: 'g.jpg', srct: 'g.jpg', title: '' },
+              { src: 'h.jpg', srct: 'h.jpg', title: '' },
+            ]
+            });
+
+            jQuery("#rainbowmountains").nanogallery2( {
+              thumbnailHeight: 1500,
+              thumbnailWidth: 2000,
+              itemsBaseURL:     'rainbowmountains/',
+              galleryMosaic :   [
+                { c: 1, r: 1, w: 2, h: 1 },
+                { c: 3, r: 1, w: 1, h: 1 },
+                { c: 4, r: 1, w: 1, h: 2 },
+                { c: 1, r: 2, w: 1, h: 1 },
+                { c: 2, r: 2, w: 2, h: 1 }
+
+              ],
+              items: [
+                { src: 'c1r1.jpg', srct: 'c1r1.jpg', title: '', },
+                { src: 'c3r1.jpg', srct: 'c3r1.jpg', title: '' },
+                { src: 'c4r1.jpg', srct: 'c4r1.jpg', title: '' },
+                { src: 'c1r2.jpg', srct: 'c1r2.jpg', title: '' },
+                { src: 'c2r2.jpg', srct: 'c2r2.jpg', title: '' }
+              ]
+            });
+
+            jQuery("#moagaocaves").nanogallery2( {
+              thumbnailHeight: 1500,
+              thumbnailWidth: 2000,
+              itemsBaseURL:     'mogao/',
+              galleryMosaic :   [
+                { c: 1, r: 1, w: 1, h: 1 },
+                { c: 2, r: 1, w: 1, h: 2 },
+                { c: 3, r: 1, w: 1, h: 1 },
+                { c: 1, r: 2, w: 1, h: 1 },
+                { c: 3, r: 2, w: 1, h: 1 }
+
+              ],
+              items: [
+                { src: 'topleft.jpg', srct: 'topleft.jpg', title: '', },
+                { src: 'middle.jpg', srct: 'middle.jpg', title: '' },
+                { src: 'topright.jpg', srct: 'topright.jpg', title: '' },
+                { src: 'bottomleft.jpg', srct: 'bottomleft.jpg', title: '' },
+                { src: 'bottomright.jpg', srct: 'bottomright.jpg', title: '' },
+
+              ]
+            });
+
+            jQuery("#mingsha").nanogallery2( {
+                // ### gallery settings ###
+              thumbnailHeight:  400,
+              thumbnailWidth:   600,
+              itemsBaseURL:     'mingsha/',
+
+                // ### gallery content ###
+              items: [
+                { src: 'a.jpg', srct: 'a.jpg', title: '' },
+                { src: 'b.jpg', srct: 'b.jpg', title: '' },
+                { src: 'c.jpg', srct: 'c.jpg', title: '' },
+                { src: 'd.jpg', srct: 'd.jpg', title: '' },
+              ]
+              });
+
+          });
+        </script>
+    <footer><p>This information is &nbsp; &copy; all pictures and videos are my own.</p></footer>
   </body>
 </html>
