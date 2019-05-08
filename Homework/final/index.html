@@ -52,14 +52,14 @@
 
     <main>
       <section id="intro">
-        <h1 id="nihao">你好!</h1>
+        <h2 id="nihao">你好!</h2>
         <h3 id="question">Have you always wanted to travel to China, but didn't know where to start?</h3>
         <p id="answer">My trip to China was one of the most significant experiences I've had so far in life. My trip included four different cities jampacked into ten days. China is an extremely diverse country with so many potential destinations and history that dates back 3000 years. It is truly a place unlike any other.</p>
       </section>
 
       <!--CITIES-->
       <section id="sect1">
-          <h1 class="title">Cities</h1>
+          <h2 class="title">Cities</h2>
         <section class="cities">
           <h2 class="place">Beijing (北京)</h2>
             <div id="beijingmap">
@@ -99,7 +99,7 @@
 
 
       <section id="sect2">
-        <h1 class="title">Exploring</h1>
+        <h2 class="title">Exploring</h2>
         <h4 id="explore">Going Outside the Major Cities: The Gansu Province</h4>
         <p id="gansu">Chinese cities are extrordinary, but they should not be your only travel destinations in China. To fully immerse yourself in and experience the cultural differences in China, I strongly recommend visiting the Gansu Province. Located in Northwest China, Gansu has a unique cradle of Chinese culture. Over history and primarily attributed to the Silk Road, Han Chinese, Mongols, Turks and Tibetans all reside and co-exist the Gansu Province. The landmarks below are just a few of the treasures located in this part of China.</p>
         <section>
@@ -150,7 +150,7 @@
 
 
       <section id="sect3">
-        <h1 class="title">What to Pack</h1>
+        <h2 class="title">What to Pack</h2>
         <div id="packing">
           <section><video src="video/packing.m4v" height="400"></section>
           <section>
@@ -168,7 +168,7 @@
 
 
       <section id="sect4">
-        <h1 class="title">Travel Tips</h1>
+        <h2 class="title">Travel Tips</h2>
         <section id="section4">
         <div>
           <h3 class="q">Packing Tips</h3>
@@ -221,7 +221,7 @@
 
 
       <section id="sect5">
-        <h1 class="title">The Language</h1>
+        <h2 class="title">The Language</h2>
         <h5 id="mandarin">In both Shanghai and Beijing, Mandarin is the most common language. Below are very useful words and phrases to use while comminicating with the Chinese.</h5>
         <div id="characters">
         <section>
@@ -269,8 +269,8 @@
       <section>
         <h3 class="topic">General and Helpful</h3>
 
-        <h4 id="h1">Where is the bathroom</h4>
-        <div id="toggleh1">
+        <h4 id="h2">Where is the bathroom</h4>
+        <div id="toggleh2">
           <h4>洗手间在哪里 (Xǐshǒujiān zài nǎlǐ)</h4>
 
         </div>
@@ -296,7 +296,7 @@
          $("#toggles1").hide();
          $("#toggles2").hide();
          $("#toggles3").hide();
-         $("#toggleh1").hide();
+         $("#toggleh2").hide();
          $("#toggleh2").hide();
 
          $("#g1").click(function(){
@@ -395,16 +395,16 @@
            $("#s3").css("background-color", "");
          });
 
-         $("#h1").click(function(){
-           $("#toggleh1").toggle();
+         $("#h2").click(function(){
+           $("#toggleh2").toggle();
          });
-         $("#h1").mouseenter(function(){
-           $("#h1").css("color", "white");
-           $("#h1").css("background-color", "#bf263c");
+         $("#h2").mouseenter(function(){
+           $("#h2").css("color", "white");
+           $("#h2").css("background-color", "#bf263c");
          });
-         $("#h1").mouseleave(function(){
-           $("#h1").css("color", "black");
-           $("#h1").css("background-color", "");
+         $("#h2").mouseleave(function(){
+           $("#h2").css("color", "black");
+           $("#h2").css("background-color", "");
          });
 
          $("#h2").click(function(){
