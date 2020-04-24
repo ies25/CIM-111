@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    body{
+      width: 100%;
+      height: auto;
+    }
+    main{
+      width: 80%;
+      margin:0 auto;
+      height: auto;
+      margin-top: 0px;
+    }
+    header{
+      width: 50%;
+      height: auto;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: -20px;
+    }
+  footer{
+      width: 60%;
+      text-align: center;
+    }
+    #intro{
+      width: 80%;
+      margin: 0 auto;
+      height: auto;
+      background-color: black;
+      color: white;
+    }
+    #pictures{
+      width: 80%;
+      margin: 0 auto;
+      height: auto;
+      background-color: aqua;
+    }
+    h2{
+      margin: 0 auto;
+      text-align: center;
+      background-color: blue;
+      color: white;
+    }
+    h3{
+      margin: 0 auto;
+      text-align: center;
+
+    }
+    #activities{
+      margin-left: 10px;
+      font-size: 22px;
+    }
+    #sum{
+      font-size: 20px;
+      text-align: center;
+    }
+    .imageGallery{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>I Took A Trip To Tahiti</h1>
+
+    </header>
+    <main>
+    <section id="intro">
+      <h2 id="whatidid">What I did</h2>
+        <p id="sum">I went to Tahiti when I graduated Suncoast Community Highschool. I went with my two parents and little brother for two weeks. We had the time of our lives on the trip. From swimming with sharks to petting sting rays. We went to the beach and ate dinner on a remote island. Took pictures that will last a life time and jet skied the Pacific!The trip was something I will never forget. The island of Bora Bora is is unlike anything I had ever seen. I think everyone should go visit at least once in their lives. </p>
+        <p id="activities">Activities</p>
+
+      <ul id="list">
+
+
+        <li>Swimming with Sharks</li>
+          <li>Petting Sting Rays</li>
+          <li>Beach</li>
+          <li>Remote Island</li>
+          <li>Magical Pictures</li>
+          <li>Jet Sking</li>
+      </ul>
+    </section>
+
+
+    <section id="pictures">
+        <h2>Places:</h2>
+      <div id="borabora"><h3>Bora Bora</h3></div>
+      <div id="bb">
+        <img class="imageGallery" src="http://2.bp.blogspot.com/-jL2iJalmfPs/UVWSd02QJ5I/AAAAAAAAB4Q/T6RJWuVQqd0/s1600/7.jpeg" width="385">
+      </div>
+      <div id="islandoftahiti"><h3>Island of Tahiti</h3></div>
+      <div id="t">
+          <img class="imageGallery" src="https://i.ytimg.com/vi/TdhpEdoizDU/maxresdefault.jpg" width="385">
+      </div>
+      <div id="pacificocean"><h3>Pacific Ocean</h3></div>
+      <div id="po">
+        <img class="imageGallery" src="https://s-i.huffpost.com/gen/1438088/images/o-PACIFIC-OCEAN-WARMING-facebook.jpg" width="385">
+      </div>
+      <div id="mountains"><h3>Mountains</h3></div>
+      <div id="m">
+        <img class= "imageGallery" src="https://blog.sevenponds.com/wp-content/uploads/2014/09/tahitian-water.jpg" width="385">
+      </div>
+      <div id="jungle"><h3>Jungle</h3></div>
+      <div id="j">
+          <img class= "imageGallery" src="https://www.goway.com/media/cache/5f/8c/5f8cfe97b42d0f53cf236812721f00bc.jpg" width="385">
+      </div>
+
+
+    </section>
+  </main>
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("body").css ("background-color", "aqua")
+        $("header").css("background-color", "white");
+        $("#list").hide();
+        $("#bb").hide();
+        $("#t").hide();
+        $("#po").hide();
+        $("#m").hide();
+        $("#j").hide();
+
+
+        $("#activities").click(function(){
+          $("#list").show();
+        });
+        $("#list").click(function(){
+          $("#list").hide();
+        });
+        $("#list").mouseenter(function(){
+          $("#activities").html("Close");
+        });
+
+        $("#list").mouseleave(function(){
+          $("#activities").html("Activities");
+        });
+
+        $("#borabora").click(function(){
+          $("#bb").toggle();
+        });
+        $("#borabora").mouseenter(function(){
+          $("#borabora").css("color", "blue");
+          $("#borabora").css("background-color", "white");
+        });
+        $("#borabora").mouseleave(function(){
+          $("#borabora").css("color", "black");
+          $("#borabora").css("background-color", "");
+        });
+
+// tahiti
+        $("#islandoftahiti").click(function(){
+          $("#t").toggle();
+        });
+        $("#islandoftahiti").mouseenter(function(){
+          $("#islandoftahiti").css("color", "blue");
+          $("#islandoftahiti").css("background-color", "white");
+        });
+        $("#islandoftahiti").mouseleave(function(){
+          $("#islandoftahiti").css("color", "black");
+          $("#islandoftahiti").css("background-color", "");
+        });
+
+// pacific ocean
+        $("#pacificocean").click(function(){
+          $("#po").toggle();
+        });
+        $("#pacificocean").mouseenter(function(){
+          $("#pacificocean").css("color", "blue");
+          $("#pacificocean").css("background-color", "white");
+        });
+        $("#pacificocean").mouseleave(function(){
+          $("#pacificocean").css("color", "black");
+          $("#pacificocean").css("background-color", "");
+        });
+// mountains
+        $("#mountains").click(function(){
+          $("#m").toggle();
+        });
+        $("#mountains").mouseenter(function(){
+          $("#mountains").css("color", "blue");
+          $("#mountains").css("background-color", "white");
+        });
+        $("#mountains").mouseleave(function(){
+          $("#mountains").css("color", "black");
+          $("#mountains").css("background-color", "");
+        });
+//jungle
+        $("#jungle").click(function(){
+          $("#j").toggle();
+        });
+        $("#jungle").mouseenter(function(){
+          $("#jungle").css("color", "blue");
+          $("#jungle").css("background-color", "white");
+        });
+        $("#jungle").mouseleave(function(){
+          $("#jungle").css("color", "black");
+          $("#jungle").css("background-color", "");
+        });
+
+
+      });
+      </script>
+    <footer><p>This information is &nbsp; &copy;</p></footer>
+  </body>
+</html>
